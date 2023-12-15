@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="10dp"
+    android:background="@drawable/custom_layout"
+    android:backgroundTint="@color/hint_color"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/car_image"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:adjustViewBounds="true"
+        tools:src="@drawable/mercedes_benz_sl" />
+
+    <TextView
+        android:id="@+id/car_model"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/car_image"
+        android:fontFamily="@font/roboto_medium"
+        android:textStyle="bold"
+        android:text="Mercedez-benz SL560"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/car_year_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/car_model"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="7dp"
+        android:layout_toEndOf="@+id/car_image"
+        android:fontFamily="@font/roboto_medium"
+        android:textColor="@color/card_secondary_text"
+        android:text="Год выпуска:"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/car_year_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/car_model"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="7dp"
+        android:layout_toEndOf="@+id/car_year_label"
+        android:fontFamily="@font/roboto_medium"
+        android:text="2003"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/reach_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/car_year_label"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="7dp"
+        android:layout_toEndOf="@+id/car_image"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Пробег, км:"
+        android:textColor="@color/card_secondary_text"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/car_reach_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/car_year_value"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="7dp"
+        android:layout_toEndOf="@+id/reach_label"
+        android:fontFamily="@font/roboto_medium"
+        android:text="176900"
+        android:textSize="17sp"></TextView>
+
+    <TextView
+        android:id="@+id/power_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reach_label"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="7dp"
+        android:layout_toEndOf="@+id/car_image"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Мощность, л/с :"
+        android:textColor="@color/card_secondary_text"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/car_power_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/car_reach_value"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="7dp"
+        android:layout_toEndOf="@+id/power_label"
+        android:fontFamily="@font/roboto_medium"
+        android:text="435"
+        android:textSize="17sp" />
+</RelativeLayout>

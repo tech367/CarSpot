@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="main_accent">#45AAB8</color>
+    <color name="button_color">#45AAB8</color>
+    <color name="light_yellow">#F9EBB2</color>
+    <color name="main_text">#506C7F</color>
+    <color name="button_text_color">#E1E1E1</color>
+    <color name="secondary_text">#ECECEC</color>
+    <color name="hint_color">#5C5C5C</color>
+    <color name="card_secondary_text">#6F807C</color>
+
+</resources>

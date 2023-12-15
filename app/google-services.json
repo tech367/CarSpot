@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "543569107420",
+    "project_id": "car-spot-757c3",
+    "storage_bucket": "car-spot-757c3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:543569107420:android:e1b6ac600bf8d569e55719",
+        "android_client_info": {
+          "package_name": "com.example.carspot"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQT4MGo9Q2qHLHz59px6fnmtfDzSu6xhI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

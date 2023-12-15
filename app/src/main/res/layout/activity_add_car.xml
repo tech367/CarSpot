@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddCarActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Введите марку и модель автомобиля:"
+                android:textAlignment="center"
+                android:textSize="17sp"
+                android:fontFamily="@font/roboto_medium"
+                android:textColor="@color/secondary_accent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="100dp"/>
+
+            <EditText
+                android:id="@+id/editTextCarName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_edit_text"
+                android:layout_marginBottom="20dp"
+                android:ems="10"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Укажите год выпуска автомобиля"
+                android:textAlignment="center"
+                android:textSize="17sp"
+                android:fontFamily="@font/roboto_medium"
+                android:textColor="@color/secondary_accent"
+                android:layout_marginVertical="10dp"/>
+
+            <EditText
+                android:id="@+id/editTextCarYear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_edit_text"
+                android:layout_marginBottom="20dp"
+                android:ems="10"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Укажите пробег автомобиля"
+                android:textAlignment="center"
+                android:textSize="17sp"
+                android:fontFamily="@font/roboto_medium"
+                android:textColor="@color/secondary_accent"
+                android:layout_marginVertical="10dp"/>
+
+            <EditText
+                android:id="@+id/editTextCarReach"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:background="@drawable/custom_edit_text"
+                android:layout_marginBottom="20dp"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Укажите мощность двигателя:"
+                android:textAlignment="center"
+                android:textSize="17sp"
+                android:fontFamily="@font/roboto_medium"
+                android:textColor="@color/secondary_accent"
+                android:layout_marginVertical="10dp"/>
+
+            <EditText
+                android:id="@+id/editTextCarPower"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_edit_text"
+                android:layout_marginBottom="20dp"
+                android:ems="10"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Добавьте фото автомобиля:"
+                android:textAlignment="center"
+                android:textSize="17sp"
+                android:fontFamily="@font/roboto_medium"
+                android:textColor="@color/secondary_accent"
+                android:layout_marginVertical="10dp"/>
+
+            <ImageView
+                android:id="@+id/imageViewSelectCar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/hint_color"
+                android:layout_gravity="center"
+                android:src="@drawable/baseline_file_download_24"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Добавьте описание автомобиля:"
+                android:textAlignment="center"
+                android:textSize="17sp"
+                android:fontFamily="@font/roboto_medium"
+                android:textColor="@color/secondary_accent"
+                android:layout_marginVertical="10dp"/>
+
+            <EditText
+                android:id="@+id/editTextCarDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:background="@drawable/custom_edit_text"
+                android:layout_marginBottom="20dp"/>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/pushCar_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cornerRadius="10dp"
+                android:text="Добавить"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:textSize="17sp"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="@color/main_accent"
+                ></com.google.android.material.button.MaterialButton>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".OffersActivity">
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:background="@color/light_yellow"
+        android:text="Заявки"
+        />
+
+    <ListView
+        android:id="@+id/ewOffers"
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:layout_below="@+id/textView14"
+        android:divider="@color/white"
+        android:dividerHeight="2dp"
+        android:layout_marginTop="20dp" />
+</RelativeLayout>

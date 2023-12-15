@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="40dp"
+    tools:context=".AuthScreenActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/account_icon"
+        android:adjustViewBounds="true"
+        android:paddingHorizontal="90dp"
+        />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="Создайте аккаунт"
+        android:textSize="30sp"
+        android:textColor="@color/main_text"
+        android:fontFamily="@font/made_waffle"/>
+
+    <LinearLayout
+        android:id="@+id/auth_data_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Имя"
+            android:textSize="17sp"
+            android:fontFamily="@font/roboto_medium"
+            android:textColor="@color/main_text"
+            android:paddingVertical="10dp"/>
+
+        <EditText
+            android:id="@+id/editTextNameAuth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:textSize="20sp"
+            android:hint="Abcd Efgh"
+            android:textColorHint="@color/hint_color"
+            android:fontFamily="@font/roboto_medium"
+            android:textColor="@color/secondary_text"
+            android:background="@drawable/custom_edit_text"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Номер телефона"
+            android:textSize="17sp"
+            android:fontFamily="@font/roboto_medium"
+            android:textColor="@color/main_text"
+            android:paddingVertical="10dp"/>
+
+        <EditText
+            android:id="@+id/editTextNumberAuth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:textSize="20sp"
+            android:hint="+1 6789 98 567"
+            android:textColor="@color/secondary_text"
+            android:textColorHint="@color/hint_color"
+            android:fontFamily="@font/roboto_medium"
+            android:background="@drawable/custom_edit_text"/>
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Адрес электронной почты"
+            android:textSize="17sp"
+            android:fontFamily="@font/roboto_medium"
+            android:textColor="@color/main_text"
+            android:paddingVertical="10dp"/>
+
+        <EditText
+            android:id="@+id/editTextTextEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:hint="example@mail.com"
+            android:textColor="@color/secondary_text"
+            android:textColorHint="@color/hint_color"
+            android:fontFamily="@font/roboto_medium"
+            android:textSize="20sp"
+            android:background="@drawable/custom_edit_text"/>
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Пароль"
+            android:textSize="17sp"
+            android:textColor="@color/main_text"
+            android:fontFamily="@font/roboto_medium"
+            android:paddingVertical="10dp"/>
+
+        <EditText
+            android:id="@+id/editTextTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="********"
+            android:textColor="@color/secondary_text"
+            android:textColorHint="@color/hint_color"
+            android:textSize="20sp"
+            android:fontFamily="@font/roboto_medium"
+            android:background="@drawable/custom_edit_text"/>
+    </LinearLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_confirm_auth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="@color/main_accent"
+        android:fontFamily="@font/roboto_medium"
+        android:onClick="onClickAuth"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Продолжить"
+        android:textAllCaps="false"
+        android:textColor="@color/button_text_color"
+        android:textSize="17sp"
+        app:cornerRadius="10dp"></com.google.android.material.button.MaterialButton>
+
+    <TextView
+        android:id="@+id/textViewAlreadyHaveAcc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_confirm_auth"
+        android:layout_marginTop="-40dp"
+        android:onClick="onClickHaveAcc"
+        android:layout_centerHorizontal="true"
+        android:text="У меня есть аккаунт"
+        android:textColor="@color/main_accent"
+        android:textSize="17sp"/>
+</RelativeLayout>
