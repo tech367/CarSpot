@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".InformationActivity">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Информация"
+        android:textAlignment="center"
+        android:textSize="23sp"
+        android:background="#FBF2CC"
+        android:padding="10dp"
+        android:fontFamily="@font/roboto_medium">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/first_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:layout_marginTop="40dp"
+        android:text="1. Возраст клтента - от 23 лет."
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:background="@drawable/custom_layout"
+        android:backgroundTint="#F4C0C0"
+        android:fontFamily="@font/roboto_medium"/>
+
+    <TextView
+        android:id="@+id/second_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/first_title"
+        android:layout_marginTop="30dp"
+        android:text="2. Водительский стаж — от трех лет и более."
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:background="@drawable/custom_layout"
+        android:backgroundTint="#F4C0C0"
+        android:fontFamily="@font/roboto_medium" />
+
+    <TextView
+        android:id="@+id/third_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/second_title"
+        android:layout_marginTop="30dp"
+        android:text="3. Документы — паспорт при первой поездке."
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:background="@drawable/custom_layout"
+        android:backgroundTint="#F4C0C0"
+        android:fontFamily="@font/roboto_medium"/>
+
+    <TextView
+        android:id="@+id/fourth_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/third_title"
+        android:layout_marginTop="30dp"
+        android:text="4. Обязательное соблюдение ПДД."
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:background="@drawable/custom_layout"
+        android:backgroundTint="#F4C0C0"
+        android:fontFamily="@font/roboto_medium"
+        />
+
+    <TextView
+        android:id="@+id/fivth_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fourth_title"
+        android:layout_marginTop="30dp"
+        android:text="5. Нельзя брать в салон животных."
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:background="@drawable/custom_layout"
+        android:backgroundTint="#F4C0C0"
+        android:fontFamily="@font/roboto_medium"/>
+
+    <TextView
+        android:id="@+id/six_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fivth_title"
+        android:layout_marginTop="30dp"
+        android:text="6. Наличие багажа во время поездки запрещено."
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:background="@drawable/custom_layout"
+        android:backgroundTint="#F4C0C0"
+        android:fontFamily="@font/roboto_medium"/>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_accept"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:text="Понятно"
+        android:textSize="17sp"
+        android:backgroundTint="@color/main_accent"
+        app:cornerRadius="10dp" />
+
+
+
+
+</RelativeLayout>

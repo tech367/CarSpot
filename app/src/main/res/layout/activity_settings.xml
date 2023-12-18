@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".SettingsActivity">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Настройки"
+        android:textAlignment="center"
+        android:textSize="23sp"
+        android:background="#FBF2CC"
+        android:padding="10dp"
+        android:textColor="@color/main_text"
+        android:fontFamily="@font/roboto_medium">
+
+    </TextView>
+
+
+
+
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:layout_marginTop="50dp"
+        android:text="Тёмная тема"
+        android:padding="10dp"
+        android:textColor="@color/main_text"
+        android:textSize="20sp"
+        android:background="@drawable/custom_layout"
+        android:backgroundTint="#F6C5D6"/>
+
+
+
+
+</RelativeLayout>

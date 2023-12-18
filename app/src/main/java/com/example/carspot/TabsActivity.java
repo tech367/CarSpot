@@ -93,7 +93,7 @@ public class TabsActivity extends AppCompatActivity {
                 ObjectAnimator animation = ObjectAnimator.ofFloat(information_layout, "translationX", 70f, 0f);
                 animation.setDuration(200);
                 animation.start();
-                startActivity(new Intent(TabsActivity.this, OffersActivity.class));
+                startActivity(new Intent(TabsActivity.this, InformationActivity.class));
             }
         });
 
@@ -104,7 +104,7 @@ public class TabsActivity extends AppCompatActivity {
                 ObjectAnimator animation = ObjectAnimator.ofFloat(settings_layout, "translationX", 70f, 0f);
                 animation.setDuration(200);
                 animation.start();
-                startActivity(new Intent(TabsActivity.this, TestActivity.class));
+                startActivity(new Intent(TabsActivity.this, SettingsActivity.class));
             }
         });
 
