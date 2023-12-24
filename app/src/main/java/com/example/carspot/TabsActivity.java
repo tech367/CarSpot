@@ -65,7 +65,10 @@ public class TabsActivity extends AppCompatActivity {
 
 
 
-        if (mAuth.getCurrentUser().getEmail().toString().equals("postikaartem4@gmail.com")) {
+        if (mAuth.getCurrentUser().getEmail().toString().equals("anna@gmail.com")
+                || mAuth.getCurrentUser().getEmail().toString().equals("admin@gmail.com")
+                || mAuth.getCurrentUser().getEmail().toString().equals("postikaartem4@gmail.com")) {
+
             information_layout.setVisibility(View.GONE);
             settings_layout.setVisibility(View.GONE);
             add_car_layout.setVisibility(View.VISIBLE);
